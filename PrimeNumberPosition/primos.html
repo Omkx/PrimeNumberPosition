@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cajas</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </head>
+  <body>
+  <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">    
+          <form action="Primo" class="form-group">
+            <fieldset>
+            <legend>Buscando primos por su posicion</legend>
+              <div class="row">
+                <div class="col-xs-6">
+                  <label for="rango">Buscar hasta el numero: </label>
+                    <input type="number" class="input-group form-control" id="rango" required placeholder="Ingresa el numero limite para buscar">
+                </div>
+                <div class="col-xs-6">
+                  <label for="numero">Posicion del numero primo: </label>
+                    <input type="number" class="input-group form-control" id="numero"  required placeholder="Ingresa la posicion que buscas del primo" required="true"><br>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12"> <input type="button" id="btresultado" value="Resultado" class="input-group form-control btn-success" onclick="mostrar();">
+                </div>
+              </div>                        
+              <div class="row">
+                <div class="col-xs-12" id="spac">
+                  <label for="resutado" style="display:none">Resultado: </label>
+                    <input type="number" id="resultado" class="input-group form-control" style="display:none">       
+                </div>
+                <div class="col-xs-12">
+                  <input id="borrar" type="button" class="input-group form-control btn-danger" value="Borrar" style="display:none" onclick="limpiar();">
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
